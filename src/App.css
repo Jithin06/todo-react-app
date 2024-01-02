@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: lightblue;
+  background-color: rgb(217, 172, 245);
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -13,7 +13,65 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.MainStructure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1 1 rem;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.todoform {
+  display: flex;
+  justify-content: center;
+  width: 25rem;
+  align-items: center;
+  height: 10vh;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: #856ad6;
+  margin: 0.5rem;
+}
+
+.todo-input {
+  padding: 1.4rem 1rem;
+  width: 15rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+.todo-button {
+  background-color: #360253;
+  color: #ffffff;
+  padding: 1.4rem 1.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.Todo {
+  display: flex;
+  width: 23rem;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+
+/*Waste CSS*/
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -41,4 +99,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
